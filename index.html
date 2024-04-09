@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-navbar">
+        <div class="logo">
+            Vadla Mounika
+        </div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">
+            Vadla Mounika
+        </div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    
+    <section id="profile">
+        <div class="section__pic-container">
+          <img src="./assets/profile-pic.jpg" alt="Mounika profile picture" />
+        </div>
+        <div class="section__text">
+          <p class="section__text__p1">Hello, I'm</p>
+          <h1 class="title">Vadla Mounika</h1>
+          <p class="section__text__p2">Web Developer</p>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2"
+              onclick="window.open('./assets/VADLAMOUNIKA_Resume.pdf')"
+            >
+              Download Resume
+            </button>
+            <button class="btn btn-color-1" onclick="location.href='#contact'">
+              Contact Info
+            </button>
+          </div>
+          <div id="socials-container">
+            <img
+              src="./assets/linkedin.png"
+              alt="My LinkedIn profile"
+              class="icon"
+              onclick="location.href='https://www.linkedin.com/in/vadla-mounika-119499220'"
+            />
+            <img
+              src="./assets/github.png"
+              alt="My Github profile"
+              class="icon"
+              onclick="location.href='https://github.com/mounika69'"
+            />
+            <img
+              src="./assets/email.png"
+              alt="My Email ID"
+              class="icon"
+              onclick="location.href='https://mailto:vadlamounika0609@gmail.com'"
+            />
+          </div>
+        </div>
+        
+      </section>
+
+
+    <section id="about">
+        <h1 class="title">About Me</h1><br>
+        <p class="section_text_p1">Hello, I'm Vadla Mounika.</p>
+        <p class="section_text_p2">I am a passionate Web Developer and Developer with good programming skills. I am interested in Web Designing and determined to learn and gain skills in Web Developement Field.</p>
+        <div class="about-details-container">
+            <h3>Basic Information</h3>
+            <div class="contact-info">
+              <div class="info-item">
+                <div class="icon"><i class="fas fa-envelope"></i></div>
+                <div>Email: <a  class="email" href="https://mailto:vadlamounika0609@gmail.com">vadlamounika0609@gmail.com</a></div>
+              </div>
+              <div class="info-item">
+                <div class="icon"><i class="fas fa-phone"></i></div>
+                <div>Phone: +91 9441286799</div>
+              </div>
+              <div class="info-item">
+                <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+                <div>Address: BSNL Type-2 Quarters, Postal Colony, J.J Nagar, Kurnool-518004.</div>
+              </div>
+              <div class="info-item">
+                <div class="icon"><i class="fas fa-language"></i></div>
+                <div>Language: Telugu, English</div>
+              </div>
+            </div>
+        </div>
+    </section>
+    <br>
+    <section id="skills">
+      <h1 class="title">Skills</h1><br>
+      <div class="skills_1">
+        <div class="skill">
+          <div class="skill-name">HTML</div>
+          <div class="skill-bar">
+            <div class="skill-progress" style="width: 90%;">90%</div>
+          </div>
+        </div>
+        <div class="skill">
+          <div class="skill-name">CSS</div>
+          <div class="skill-bar">
+            <div class="skill-progress" style="width: 80%;">80%</div>
+          </div>
+        </div>
+        <div class="skill">
+          <div class="skill-name">Javascript</div>
+          <div class="skill-bar">
+            <div class="skill-progress" style="width: 75%;">75%</div>
+          </div>
+        </div>
+        <div class="skill">
+          <div class="skill-name">Java</div>
+          <div class="skill-bar">
+            <div class="skill-progress" style="width: 90%;">90%</div>
+          </div>
+        </div>
+        <div class="skill">
+          <div class="skill-name">Python</div>
+          <div class="skill-bar">
+            <div class="skill-progress" style="width: 80%;">80%</div>
+          </div>
+        </div>
+        <div class="skill">
+          <div class="skill-name">DBMS</div>
+          <div class="skill-bar">
+            <div class="skill-progress" style="width: 80%;">80%</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <br>
+
+    <section id="projects">
+      <h1 class="title">Projects</h1><br>
+      <div class="projects_1">
+        <div class="project">
+          <img src="./assets/project1.png" onclick="location.href='https://github.com/mounika69/WordCounter'" alt="Project 1">
+          <h3>Word Counter</h3>
+          <p>A word counter project typically involves creating a tool or application that counts the number of words, characters, or other elements within a given text input. It's a simple but useful utility that can be used in various contexts, such as writing, editing, or analyzing text data.</p>
+        </div>
+        <div class="project">
+          <img src="./assets/project2.png" onclick="location.href='https://github.com/mounika69/Stress-Detection-using-ML'" alt="Project 2">
+          <h3>Stress Detection</h3>
+          <p>Stress detection using machine learning involves collecting, cleaning, and preprocessing data. Feature engineering techniques are applied to extract meaningful information or create new features that can capture patterns related to stress.</p>
+        </div>
+      </div>
+    </section>
+    <br><br><br><br><br>
+    <section id="contact">
+      <h1 class="title">Contact Me</h1>
+      <h3>
+        Feel free to contact me
+      </h3>
+      <form id="contactForm">
+        <div class="form-group">
+          <i class="fas fa-user"></i>
+          <input type="text" id="name" name="name" placeholder="Your Name" required>
+        </div>
+        <div class="form-group">
+          <i class="fas fa-book"></i>
+          <input type="text" id="subject" name="subject" placeholder="Subject" required>
+        </div>
+        <div class="form-group">
+          <i class="fas fa-envelope"></i>
+          <input type="email" id="email" name="email" placeholder="Your Email" required>
+        </div>
+        <div class="form-group">
+          <i class="fas fa-comment"></i>
+          <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+        </div>
+        <button type="submit"><i class="fas fa-paper-plane"></i> Send</button>
+      </form>
+      <br>
+      <div class="contact-info">
+        <div class="info-item">
+          <div class="icon"><i class="fas fa-envelope"></i></div>
+          <div>Email: <a  class="email" href="https://mailto:vadlamounika0609@gmail.com">vadlamounika0609@gmail.com</a></div>
+        </div>
+        <div class="info-item">
+          <div class="icon"><i class="fas fa-phone"></i></div>
+          <div>Phone: +91 9441286799</div>
+        </div>
+        <div class="info-item">
+          <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+          <div>Address: BSNL Type-2 Quarters, Postal Colony, J.J Nagar, Kurnool-518004.</div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Vadla Mounika. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
